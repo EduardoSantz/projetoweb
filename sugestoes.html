@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestões - Filmes de Terror</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Logo Obscura Filmes" class="logo">
+        <h1>Obscura Filmes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="filmes.html">Filmes</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="sugestoes.html">Sugestões</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="formulario-recomendacao">
+            <h2>Recomende um Filme</h2>
+            <form action="#" method="POST" class="form-recomendacao">
+                <div class="form-item">
+                    <label for="nome-filme">Nome do Filme:</label>
+                    <input type="text" id="nome-filme" name="nome-filme" required>
+                </div>
+        
+                <div class="form-item">
+                    <label for="genero-filme">Gênero:</label>
+                    <input type="text" id="genero-filme" name="genero-filme" required>
+                </div>
+        
+                <div class="form-item">
+                    <label for="ano-filme">Ano de Lançamento:</label>
+                    <input type="number" id="ano-filme" name="ano-filme" required>
+                </div>
+        
+                <div class="form-item">
+                    <label for="nota-filme">Nota do Filme (1 a 10):</label>
+                    <input type="number" id="nota-filme" name="nota-filme" min="1" max="10" required>
+                </div>
+        
+                <div class="form-item">
+                    <label for="comentarios">Comentário:</label>
+                    <textarea id="comentarios" name="comentarios" required></textarea>
+                </div>
+        
+                <button type="submit" class="btn-recomendar">Enviar Recomendação</button>
+            </form>
+        </section>        
+    
+    </main>
+
+    <footer>
+        <p>Contato: contato@obscurafilmes.com | <a href="https://www.facebook.com/obscurafilmes" target="_blank">Facebook</a> | <a href="https://www.instagram.com/obscurafilmes" target="_blank">Instagram</a></p>
+    </footer>
+</body>
+</html>
